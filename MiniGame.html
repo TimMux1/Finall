@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/styles.css">
+  <link rel="icon" href="favicon.ico">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/png" href="JPG/logo.jpg">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+
+
+  <title>Спорт Магазин</title>
+</head>
+<body>
+<div class="container-fluid">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container border-0">
+      <i class="fas fa-home"></i>
+      <span class="navbar-brand">Sport-Shop</span>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="mensDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Mans
+            </a>
+            <div class="dropdown-menu" aria-labelledby="mensDropdown"   >
+              <a class="dropdown-item" href="#">Обувь</a>
+              <a class="dropdown-item" href="#">Топы и Футболки</a>
+              <a class="dropdown-item" href="#">Шоты</a>
+              <a class="dropdown-item" href="#">Штаны</a>
+              <a class="dropdown-item" href="#">Носки</a>
+              <a class="dropdown-item" href="#">Толстовки и кофты</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="womensDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Womans
+            </a>
+            <div class="dropdown-menu" aria-labelledby="womensDropdown">
+              <a class="dropdown-item" href="#">Обувь</a>
+              <a class="dropdown-item" href="#">Топы и Футболки</a>
+              <a class="dropdown-item" href="#">Шоты</a>
+              <a class="dropdown-item" href="#">Штаны</a>
+              <a class="dropdown-item" href="#">Носки</a>
+              <a class="dropdown-item" href="#">Толстовки и кофты</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="kidsDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Kids
+            </a>
+            <div class="dropdown-menu" aria-labelledby="kidsDropdown">
+              <a class="dropdown-item" href="#">Обувь</a>
+              <a class="dropdown-item" href="#">Топы и Футболки</a>
+              <a class="dropdown-item" href="#">Шоты</a>
+              <a class="dropdown-item" href="#">Штаны</a>
+              <a class="dropdown-item" href="#">Носки</a>
+              <a class="dropdown-item" href="#">Толстовки и кофты</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="acsDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Accessories
+            </a>
+            <div class="dropdown-menu" aria-labelledby="acsDropdown">
+              <a class="dropdown-item" href="#">Браслеты</a>
+              <a class="dropdown-item" href="#">Сумки и рюкзаки</a>
+              <a class="dropdown-item" href="#">Головные уборы</a>
+              <a class="dropdown-item" href="#">Бутылки с водой</a>
+            </div>
+          </li>
+          <a href="Shop.html" class="nav-link me-3">Products</a>
+          <a href="Shop.html" class="nav-link me-3">Mini game</a>
+          <div class="container border-0 search-container">
+            <form class="row g-3">
+              <div class="col">
+                <input type="text" id="search-input" class="form-control" placeholder="Введите текст...">
+              </div>
+              <div class="col-auto">
+                <button class="btn btn-primary search-button">Найти</button>
+              </div>
+            </form>
+          </div>
+
+
+
+
+          <div class="container border-0">
+            <div class="buttons">
+              <a href="registration.html" class="btn btn-primary button">Registration</a>
+              <a href="login.html" class="btn btn-secondary button">Login</a>
+            </div>
+          </div>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+</div>
+<div class="container">
+  <div class = "logo-container">
+    <img src="JPG/logo.jpg" alt="Логотип" class="logo">
+  </div>
+  <div class="col-8 text-end">
+    <h1>Welcome to the Tim-sport shop</h1>
+    <h2><p>We offer a wide selection of sporting goods for you to choose from. </p></h2>
+  </div>
+</div>
+
+<div id="container">
+  <div id="football" class="sport-box" draggable="true" ondragstart="event.dataTransfer.setData('text/plain', 'football')">Football</div>
+  <div id="basketball" class="sport-box" draggable="true" ondragstart="event.dataTransfer.setData('text/plain', 'basketball')">Basketball</div>
+  <div id="tennis" class="sport-box" draggable="true" ondragstart="event.dataTransfer.setData('text/plain', 'tennis')">Tennis</div>
+</div>
+
+<div id="questions" style="display: flex; justify-content: center; align-items: center; margin-top: 50px;">
+  <div id="fact1" class="fact-box" ondrop="drop(event, 'Football')" ondragover="allowDrop(event)">Offside</div>
+  <div id="fact2" class="fact-box" ondrop="drop(event, 'Basketball')" ondragover="allowDrop(event)">Slam dunk</div>
+  <div id="fact3" class="fact-box" ondrop="drop(event, 'Tennis')" ondragover="allowDrop(event)">Racket</div>
+</div>
+
+<div class="container mt-5">
+  <form id="quizForm">
+    <div id="step1">
+      <h3>Question 1</h3>
+      <p>What year were the first modern Olympic Games held?</p>
+      <input type="radio" name="q1" value="1896"> 1896<br>
+      <input type="radio" name="q1" value="1900"> 1900<br>
+      <input type="radio" name="q1" value="1920"> 1920<br>
+      <button type="button" class="btn btn-primary mt-3" onclick="checkAnswer('1896')">Next</button>
+    </div>
+
+    <div id="step2" style="display: none;">
+      <h3>Question 2</h3>
+      <p>Which football club has won the most UEFA Champions League titles?</p>
+      <input type="radio" name="q2" value="Barcelona"> Barcelona<br>
+      <input type="radio" name="q2" value="Real Madrid"> Real Madrid<br>
+      <input type="radio" name="q2" value="Manchester United"> Manchester United<br>
+      <button type="button" class="btn btn-primary mt-3" onclick="checkAnswer('Real Madrid')">Next</button>
+    </div>
+
+    <div id="step3" style="display: none;">
+      <h3>Question 3</h3>
+      <p>Who holds the record for the most gold medals at the Olympic Games?</p>
+      <input type="radio" name="q3" value="Michael Phelps"> Michael Phelps<br>
+      <input type="radio" name="q3" value="Usain Bolt"> Usain Bolt<br>
+      <input type="radio" name="q3" value="Simone Biles"> Simone Biles<br>
+      <button type="button" class="btn btn-primary mt-3" onclick="checkAnswer('Michael Phelps')">Next</button>
+    </div>
+
+    <div id="step4" style="display: none;">
+      <h3>Question 4</h3>
+      <p>Which city hosted the Summer Olympic Games in 2016?</p>
+      <input type="radio" name="q4" value="Tokyo"> Tokyo<br>
+      <input type="radio" name="q4" value="Rio de Janeiro"> Rio de Janeiro<br>
+      <input type="radio" name="q4" value="London"> London<br>
+      <button type="button" class="btn btn-primary mt-3" onclick="checkAnswer('Rio de Janeiro')">Next</button>
+    </div>
+
+    <div id="step5" style="display: none;">
+      <h3>Question 5</h3>
+      <p>What animal is the symbol of the Olympic Games?</p>
+      <input type="radio" name="q5" value="Lion"> Lion<br>
+      <input type="radio" name="q5" value="Eagle"> Eagle<br>
+      <input type="radio" name="q5" value="Dove"> Dove<br>
+      <button type="button" class="btn btn-primary mt-3" onclick="checkAnswer('Dove')">Next</button>
+    </div>
+
+    <div id="step6" style="display: none;">
+      <h3>Question 6</h3>
+      <p>What is the capital of France?</p>
+      <input type="radio" name="q6" value="Paris"> Paris<br>
+      <input type="radio" name="q6" value="Berlin"> Berlin<br>
+      <input type="radio" name="q6" value="Rome"> Rome<br>
+      <button type="button" class="btn btn-primary mt-3" onclick="checkAnswer('Paris')">Next</button>
+    </div>
+
+    <div id="step7" style="display: none;">
+      <h3>Question 7</h3>
+      <p>Which sport involves races walking over a marked course?</p>
+      <input type="radio" name="q7" value="Racewalking"> Racewalking<br>
+      <input type="radio" name="q7" value="Sprinting"> Sprinting<br>
+      <input type="radio" name="q7" value="Marathon running"> Marathon running<br>
+      <button type="button" class="btn btn-primary mt-3" onclick="checkAnswer('Racewalking')">Next</button>
+    </div>
+
+    <div id="step8" style="display: none;">
+      <h3>Question 8</h3>
+      <p>In which year did the first FIFA World Cup take place?</p>
+      <input type="radio" name="q8" value="1922"> 1922<br>
+      <input type="radio" name="q8" value="1930"> 1930<br>
+      <input type="radio" name="q8" value="1950"> 1950<br>
+      <button type="button" class="btn btn-primary mt-3" onclick="checkAnswer('1930')">Next</button>
+    </div>
+
+    <div id="step9" style="display: none;">
+      <h3>Question 9</h3>
+      <p>Which country won the most medals at the 2020 Summer Olympics?</p>
+      <input type="radio" name="q9" value="United States"> United States<br>
+      <input type="radio" name="q9" value="China"> China<br>
+      <input type="radio" name="q9" value="Russia"> Russia<br>
+      <button type="button" class="btn btn-primary mt-3" onclick="checkAnswer('United States')">Next</button>
+    </div>
+
+    <div id="step10" style="display: none;">
+      <h3>Question 10</h3>
+      <p>Who is often referred to as "The Greatest" in the history of boxing?</p>
+      <input type="radio" name="q10" value="Mike Tyson"> Mike Tyson<br>
+      <input type="radio" name="q10" value="Floyd Mayweather"> Floyd Mayweather<br>
+      <input type="radio" name="q10" value="Muhammad Ali"> Muhammad Ali<br>
+      <button type="button" class="btn btn-primary mt-3" onclick="submitForm()">Submit</button>
+    </div>
+  </form>
+</div>
+
+<script>
+  var currentStep = 1;
+
+  function nextStep() {
+    document.getElementById('step' + currentStep).style.display = 'none';
+    currentStep++;
+    document.getElementById('step' + currentStep).style.display = 'block';
+  }
+
+  function checkAnswer(correctAnswer) {
+    var selectedAnswer = document.querySelector('input[name="q' + currentStep + '"]:checked');
+
+    if (selectedAnswer && selectedAnswer.value === correctAnswer) {
+      if (currentStep < 10) {
+        nextStep();
+      } else {
+        alert('Congratulations! Quiz completed.');
+        resetQuiz();
+      }
+    } else {
+      alert('Incorrect Answer. Please try again.');
+      resetQuiz();
+    }
+  }
+
+  function submitForm() {
+    alert('Quiz submitted!');
+    resetQuiz();
+  }
+
+  function resetQuiz() {
+    currentStep = 1;
+
+    for (var i = 2; i <= 10; i++) {
+      document.getElementById('step' + i).style.display = 'none';
+    }
+
+    document.getElementById('step1').style.display = 'block';
+  }
+</script>
+
+<button onclick="scrollToTop()" id="scrollToTopButton" title="Go to top">Top</button>
+<script>
+  // Когда документ полностью загружен
+  document.addEventListener('DOMContentLoaded', function () {
+    // Добавляем обработчик события прокрутки
+    window.onscroll = function () {
+      showScrollButton(); // Вызываем функцию при прокрутке
+    };
+  });
+
+  // Показываем или скрываем кнопку прокрутки вверх
+  function showScrollButton() {
+    var scrollToTopButton = document.getElementById("scrollToTopButton");
+
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      scrollToTopButton.style.display = "block";
+    } else {
+      scrollToTopButton.style.display = "none";
+    }
+  }
+
+  // Прокрутка вверх при нажатии на кнопку
+  function scrollToTop() {
+    document.body.scrollTop = 0; // Для поддержки старых браузеров
+    document.documentElement.scrollTop = 0; // Для современных браузеров
+  }
+</script>
+
+<script>
+  function allowDrop(ev) {
+    ev.preventDefault();
+  }
+
+  function drop(ev, correctAnswer) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text/plain");
+    var targetId = ev.target.id;
+    if ((data === 'football' && targetId === 'fact1') || (data === 'basketball' && targetId === 'fact2') || (data === 'tennis' && targetId === 'fact3')) {
+      ev.target.innerHTML = data;
+    } else {
+      alert("Incorrect Answer");
+    }
+  }
+</script>
+<footer>
+  <p>&copy; 2023 Sport Shop. Mukhamediyev Temirlan, SE-2212.</p>
+</footer>
+</body>
+</html>

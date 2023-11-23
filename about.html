@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="icon" type="image/png" href="JPG/logo.jpg">
+    <title>О нас</title>
+</head>
+<body>
+    <h1>О нас</h1>
+    <p>Мы - ваш надежный спортивный магазин, предоставляющий качественные товары и отличное обслуживание.</p>
+    <button onclick="scrollToTop()" id="scrollToTopButton" title="Go to top">Top</button>
+    <script>
+        // Когда документ полностью загружен
+        document.addEventListener('DOMContentLoaded', function () {
+            // Добавляем обработчик события прокрутки
+            window.onscroll = function () {
+                showScrollButton(); // Вызываем функцию при прокрутке
+            };
+        });
+
+        // Показываем или скрываем кнопку прокрутки вверх
+        function showScrollButton() {
+            var scrollToTopButton = document.getElementById("scrollToTopButton");
+
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollToTopButton.style.display = "block";
+            } else {
+                scrollToTopButton.style.display = "none";
+            }
+        }
+
+        // Прокрутка вверх при нажатии на кнопку
+        function scrollToTop() {
+            document.body.scrollTop = 0; // Для поддержки старых браузеров
+            document.documentElement.scrollTop = 0; // Для современных браузеров
+        }
+    </script>
+    <footer>
+        <p>&copy; 2023 Sport Shop. Mukhamediyev Temirlan, SE-2212.</p>
+    </footer>
+</body>
+</html>
